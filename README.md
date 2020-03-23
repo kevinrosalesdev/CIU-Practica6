@@ -50,6 +50,7 @@ Además, se tiene que todos los efectos hacen uso, de una manera u otra de [una 
 <div align="center">
    <p>Tabla 1: Muestra de resultados</p>
 </div>
+
 ### 3. Descripción del trabajo realizado
 
 #### 3.1 Estructura de ficheros
@@ -64,6 +65,7 @@ Para realizar este trabajo, se han creado estos dos ficheros (presentes en la ca
 <div align="center">
    <p>Tabla 2: Estructura de ficheros</p>
 </div>
+
 #### 3.2 Decisiones en el desarrollo
 
 A la hora de realizar los distintos efectos se ha tenido que tomar una serie de decisiones respecto al desarrollo del proyecto. A continuación, se listarán dichas decisiones:
