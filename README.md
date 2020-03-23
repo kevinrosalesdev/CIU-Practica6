@@ -78,9 +78,8 @@ Gracias a dicha detección facial y de ojos, se pudieron desarrollar los 4 efect
 
 Además, sobre dicha detección se extrajo unas dimensiones de la cara distintas a las propuestas para algunos de los efectos que a continuación se describirán. La **rectángulo rojo** es la detección que ofrece el módulo del repositorio de CIU mientras que el **rectángulo amarillo** contiene la detección utilizada en el [efecto de "cabeza invertida"](#322-efecto-cabeza-invertida) y en el [efecto de detective"](#325-efecto-detective):
 
-![face-detection](Practica6/media/face-detection.png)
-
 <div align="center">
+   <img src="Practica6/media/face-detection.png" alt="face-detection"></img>
    <p>Figura 1: Comparación de dimensiones de rostros escogidas</p>
 </div>
 
@@ -117,9 +116,8 @@ void reverseFace(CVImage faceImg, float[] face) {
    <p>Fragmento de código 1: Construcción del efecto de "cabeza invertida"</p>
 </div>
 
-![mode-0](/Practica6/media/mode-0.gif)
-
 <div align="center">
+    <img src="/Practica6/media/mode-0.gif" alt="mode-0"></img>
     <p>Figura 2: Muestra de efecto <i>cabeza invertida</i></p>
 </div>
 
@@ -168,9 +166,8 @@ void drawEyes(float[] eye) {
    <p>Fragmento de código 2: Cálculo de centros y de radios de los ojos para su posterior dibujado </p>
 </div>
 
-![mode-1](/Practica6/media/mode-1.gif)
-
 <div align="center">
+    <img src="/Practica6/media/mode-1.gif" alt="mode-1"></img>
     <p>Figura 3: Muestra de efecto <i>caminante blanco</i></p>
 </div>
 
@@ -217,9 +214,8 @@ void drawEyes(float[] eye) {
    <p>Fragmento de código 3: Cálculo de la posición del ojo izquierdo con desplazamiento hacia el centro del rostro para su posterior dibujado </p>
 </div>
 
-![mode-2](/Practica6/media/mode-2.gif)
-
 <div align="center">
+   <img src="/Practica6/media/mode-2.gif" alt="mode-2"></img>
    <p>Figura 4: Muestra de efecto <i>artista</i></p>
 </div>
 
@@ -259,9 +255,8 @@ void faceSobelAndCanny(CVImage faceImg, float[] face) {
    <p>Fragmento de código 4: Generación y dibujado de efectos <i>canny</i> y <i>sobel</i></p>
 </div>
 
-![mode-3](/Practica6/media/mode-3.gif)
-
 <div align="center">
+   <img src="/Practica6/media/mode-3.gif" alt="mode-3"></img>
    <p>Figura 4: Muestra de efecto <i>detective</i></p>
 </div>
 
