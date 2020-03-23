@@ -27,7 +27,7 @@ ArrayList[] detectFacesAndEyes(Mat grey, float pupilRadius, float irisRadius) {
     if (mode != 2){
       for (Rect rl : leyesArr) {
         //rect(rl.x+r.x, rl.y+r.y, rl.height, rl.width);
-        if (mode != 2) eyesToDraw.add(new float[]{rl.x+r.x+(rl.height/2), rl.y+r.y+(rl.width/2), (pupilRadius + irisRadius)*((r.height*r.width)/(rl.height*rl.width*17.5)), (pupilRadius)*((r.height*r.width)/(rl.height*rl.width*17.5))});
+        eyesToDraw.add(new float[]{rl.x+r.x+(rl.height/2), rl.y+r.y+(rl.width/2), (pupilRadius + irisRadius)*((r.height*r.width)/(rl.height*rl.width*17.5)), (pupilRadius)*((r.height*r.width)/(rl.height*rl.width*17.5))});
       }
     }
 
@@ -63,6 +63,8 @@ ArrayList[] detectFacesAndEyes(Mat grey, float pupilRadius, float irisRadius) {
 
     //rect(r.x+(int)(r.width*0.175), r.y+(int)(r.height*0.25), r.width*0.7, r.height*0.65);
     facesToReverse.add(new float[]{r.x+(int)(r.width*0.175), r.y+(int)(r.height*0.25), r.width*0.7, r.height*0.65});
+    
+    //stroke(255, 0, 0);
   }
 
   faces.release();

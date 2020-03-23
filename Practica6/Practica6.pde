@@ -1,4 +1,4 @@
-import gifAnimation.*;
+//import gifAnimation.*;
 import java.lang.*;
 import processing.video.*;
 import cvimage.*;
@@ -10,8 +10,8 @@ import org.opencv.imgproc.Imgproc;
 Capture cam;
 CVImage img;
 
-GifMaker ficherogif;
-int frameCounter;
+//GifMaker ficherogif;
+//int frameCounter;
 
 float blink = 0.0;
 boolean increase = true;
@@ -41,20 +41,22 @@ void setup() {
   
   font = loadFont("GillSansMT-Bold-48.vlw");
   
-  ficherogif = new GifMaker(this, "animation.gif");
-  ficherogif.setRepeat(0);
-  ficherogif.addFrame();
-  frameCounter = 0;
+  //ficherogif = new GifMaker(this, "animation.gif");
+  //ficherogif.setRepeat(0);
+  //ficherogif.addFrame();
+  //frameCounter = 0;
+  
+  background(0);
 }
 
 void draw() {  
   if (cam.available()) {
     
-    frameCounter++;
-    if(frameCounter == 10){
-      ficherogif.addFrame();
-      frameCounter = 0;
-    }
+    //frameCounter++;
+    //if(frameCounter == 10){
+    //  ficherogif.addFrame();
+    //  frameCounter = 0;
+    //}
     
     if (mode != 2) background(0);
     cam.read();
